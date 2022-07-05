@@ -1,6 +1,6 @@
 {
     "name": "@savks/not-need-lodash",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "description": "Lodash functions analogs",
     "license": "MIT",
     "author": "Savks",
@@ -20,6 +20,8 @@
         "access": "public"
     },
     "files": [
-        "*"
+        "*.js",
+        "*.d.ts",
+        "*.js.map"
     ]
 }
