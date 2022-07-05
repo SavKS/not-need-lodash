@@ -1,6 +1,6 @@
 {
     "name": "@savks/not-need-lodash",
-    "version": "1.1.2",
+    "version": "1.1.5",
     "description": "Lodash functions analogs",
     "license": "MIT",
     "author": "Savks",
@@ -18,5 +18,8 @@
     },
     "publishConfig": {
         "access": "public"
-    }
+    },
+    "files": [
+        "*"
+    ]
 }
