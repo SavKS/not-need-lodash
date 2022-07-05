@@ -5,7 +5,7 @@
  * @param  {*}       obj2 The second item
  * @return {Boolean}       Returns true if they're equal in value
  */
-function isEqual(obj1: any, obj2: any) {
+export default function isEqual(obj1: any, obj2: any) {
 
     /**
      * More accurately check the type of a JavaScript object
