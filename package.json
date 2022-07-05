@@ -6,7 +6,8 @@
     "author": "Savks",
     "sideEffects": false,
     "scripts": {
-        "build": "tsc"
+        "build": "tsc",
+        "prepare": "yarn build"
     },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.2.0",
