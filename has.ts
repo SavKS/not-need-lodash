@@ -5,12 +5,17 @@ export default (obj: any, path: string | string[]) => {
 
     const pathArray = Array.isArray(path) ? path : path.match(/([^[.\]])+/g);
 
+    if (pathArray === null) {
+        return false;
+    }
+
     let prevObj = obj;
+
     for (const key of pathArray) {
         if (typeof prevObj !== 'object' || !Object.hasOwnProperty.call(prevObj, key)) {
             return false;
         }
-        prevObj = prevObj[key];
+        prevObj = prevObj[ key ];
     }
 
     return true;
