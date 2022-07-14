@@ -2,11 +2,17 @@
 // it might not work for some edge cases. Test your code!
 export default (obj: any, path: string | string[], value: any) => {
     // Regex explained: https://regexr.com/58j0k
-    const pathArray = Array.isArray(path) ? path : path.match(/([^[.\]])+/g);
+    const pathArray = (
+        Array.isArray(path) ? path : path.match(/([^[.\]])+/g)
+    )?.map(
+        part => parseInt(part).toString() === part ? parseInt(part) : part
+    );
 
     pathArray?.reduce((acc, key, i) => {
         if (acc[ key ] === undefined) {
-            acc[ key ] = typeof key === 'number' ? [] : {};
+            const nextKey = pathArray[ i + 1 ];
+
+            acc[ key ] = typeof nextKey === 'number' ? [] : {};
         }
 
         if (i === pathArray.length - 1) {
