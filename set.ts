@@ -6,10 +6,15 @@ export default (obj: any, path: string | string[], value: any) => {
 
     pathArray?.reduce((acc, key, i) => {
         if (acc[ key ] === undefined) {
-            acc[ key ] = {};
+            acc[ key ] = typeof key === 'number' ? [] : {};
         }
 
         if (i === pathArray.length - 1) {
+            if (typeof key !== 'number' && Array.isArray(acc)) {
+                // eslint-disable-next-line no-console
+                console.error(`Invalid array key "${ key }"`);
+            }
+
             acc[ key ] = value;
         }
 
