@@ -8,6 +8,8 @@ export default (obj: any, path: string | string[], value: any) => {
         part => parseInt(part).toString() === part ? parseInt(part) : part
     );
 
+    obj = obj ?? (typeof pathArray?.[ 0 ] === 'number' ? [] : {});
+
     pathArray?.reduce((acc, key, i) => {
         if (acc[ key ] === undefined) {
             const nextKey = pathArray[ i + 1 ];
