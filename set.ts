@@ -11,7 +11,7 @@ export default (obj: any, path: string | string[], value: any) => {
     obj = obj ?? (typeof pathArray?.[ 0 ] === 'number' ? [] : {});
 
     pathArray?.reduce((acc, key, i) => {
-        if (acc[ key ] === undefined) {
+        if (acc[ key ] === undefined || acc[ key ] === null) {
             const nextKey = pathArray[ i + 1 ];
 
             acc[ key ] = typeof nextKey === 'number' ? [] : {};
