@@ -5,6 +5,9 @@
     "license": "MIT",
     "author": "Savks",
     "sideEffects": false,
+    "repository": {
+        "url": "https://github.com/SavKS/not-need-lodash"
+    },
     "scripts": {
         "build": "tsc",
         "prepack": "yarn build"
