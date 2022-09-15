@@ -1,6 +1,6 @@
 {
     "name": "@savks/not-need-lodash",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "description": "Lodash functions analogs",
     "license": "MIT",
     "author": "Savks",
