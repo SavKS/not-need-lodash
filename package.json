@@ -1,10 +1,13 @@
 {
     "name": "@savks/not-need-lodash",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "description": "Lodash functions analogs",
     "license": "MIT",
     "author": "Savks",
     "sideEffects": false,
+    "repository": {
+        "url": "https://github.com/SavKS/not-need-lodash"
+    },
     "scripts": {
         "build": "tsc",
         "prepack": "yarn build"
