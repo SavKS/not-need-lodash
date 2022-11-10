@@ -6,9 +6,9 @@ export default (obj: Record<any, any>, path: string[] | string) => {
 
     pathArray?.reduce((acc, key, i) => {
         if (i === pathArray.length - 1) {
-            delete acc[ key ];
+            delete acc?.[ key ];
         }
 
-        return acc[ key ];
+        return acc?.[ key ];
     }, obj);
 };
