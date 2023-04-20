@@ -1,9 +1,10 @@
 {
     "name": "@savks/not-need-lodash",
-    "version": "1.2.6",
+    "version": "1.3.0",
     "description": "Lodash functions analogs",
     "license": "MIT",
     "author": "Savks",
+    "type": "module",
     "sideEffects": false,
     "repository": {
         "url": "https://github.com/SavKS/not-need-lodash"
