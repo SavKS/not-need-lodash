@@ -6,6 +6,7 @@
     "author": "Savks",
     "type": "module",
     "sideEffects": false,
+    "packageManager": "yarn@3.5.0",
     "repository": {
         "url": "https://github.com/SavKS/not-need-lodash"
     },
@@ -14,18 +15,40 @@
         "prepack": "yarn build"
     },
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.2.0",
-        "@typescript-eslint/parser": "^5.2.0",
-        "eslint": "^8.1.0",
-        "eslint-config-crockford": "^2.0.0",
-        "typescript": "^4.4.4"
+        "typescript": "^5.0.4"
     },
     "publishConfig": {
         "access": "public"
     },
     "files": [
-        "*.js",
-        "*.d.ts",
-        "*.js.map"
-    ]
+        "dist/*.js",
+        "dist/*.d.ts",
+        "dist/*.js.map"
+    ],
+    "exports": {
+        "./get": {
+            "default": "./dist/get.js",
+            "types": "./dist/get.d.ts"
+        },
+        "./has": {
+            "default": "./dist/has.js",
+            "types": "./dist/has.d.ts"
+        },
+        "./identity": {
+            "default": "./dist/identity.js",
+            "types": "./dist/identity.d.ts"
+        },
+        "./isEqual": {
+            "default": "./dist/isEqual.js",
+            "types": "./dist/isEqual.d.ts"
+        },
+        "./set": {
+            "default": "./dist/set.js",
+            "types": "./dist/set.d.ts"
+        },
+        "./unset": {
+            "default": "./dist/unset.js",
+            "types": "./dist/unset.d.ts"
+        }
+    }
 }

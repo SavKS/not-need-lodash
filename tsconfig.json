@@ -5,16 +5,15 @@
         "sourceMap": true,
         "strict": true,
         "esModuleInterop": true,
-        "outDir": "./",
+        "outDir": "./dist",
         "declaration": true,
-        "declarationDir": "./",
-        "moduleResolution": "Node"
+        "moduleResolution": "NodeNext"
     },
     "exclude": [
         "node_modules",
         "dist"
     ],
     "include": [
-        "*"
+        "src/*"
     ]
 }
