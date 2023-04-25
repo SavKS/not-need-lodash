@@ -1,0 +1,23 @@
+{
+    "extends": [
+        "@tarik02/eslint-config-type-1",
+        "@tarik02/eslint-config-type-1-import",
+        "@tarik02/eslint-config-type-1-react"
+    ],
+    "env": {
+        "browser": true
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {
+                "project": "./tsconfig.json"
+            }
+        },
+        "react": {
+            "version": "18"
+        }
+    },
+    "ignorePatterns": [
+        "dist"
+    ]
+}
