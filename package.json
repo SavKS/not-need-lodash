@@ -1,6 +1,6 @@
 {
     "name": "@savks/not-need-lodash",
-    "version": "1.3.3",
+    "version": "1.3.4",
     "description": "Lodash functions analogs",
     "license": "MIT",
     "author": "Savks",
@@ -31,28 +31,28 @@
     ],
     "exports": {
         "./get": {
-            "default": "./dist/get.js",
-            "types": "./dist/get.d.ts"
+            "types": "./dist/get.d.ts",
+            "default": "./dist/get.js"
         },
         "./has": {
-            "default": "./dist/has.js",
-            "types": "./dist/has.d.ts"
+            "types": "./dist/has.d.ts",
+            "default": "./dist/has.js"
         },
         "./identity": {
-            "default": "./dist/identity.js",
-            "types": "./dist/identity.d.ts"
+            "types": "./dist/identity.d.ts",
+            "default": "./dist/identity.js"
         },
         "./isEqual": {
-            "default": "./dist/isEqual.js",
-            "types": "./dist/isEqual.d.ts"
+            "types": "./dist/isEqual.d.ts",
+            "default": "./dist/isEqual.js"
         },
         "./set": {
-            "default": "./dist/set.js",
-            "types": "./dist/set.d.ts"
+            "types": "./dist/set.d.ts",
+            "default": "./dist/set.js"
         },
         "./unset": {
-            "default": "./dist/unset.js",
-            "types": "./dist/unset.d.ts"
+            "types": "./dist/unset.d.ts",
+            "default": "./dist/unset.js"
         }
     }
 }
